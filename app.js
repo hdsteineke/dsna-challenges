@@ -23,6 +23,26 @@ function shift(arr) {
   return arr[0];
 }
 
+function hasDuplicates(arr) {
+  for(let i = 0;  i < arr.length; i++) {
+    for(let j = 1; j < arr.length; j++) {
+      if (arr[i] === arr[j]) return true;
+    }
+  }
+  return false;
+}
+function betterHasDuplicates(arr) {
+  const acc = {}
+  for(let i = 0;  i < arr.length; i++) {
+    if (!acc[arr[i]]) {
+      acc[arr[i]] = 1;
+    } else {
+      return true;
+    }
+    }
+    return false;
+  }
+
 function fizzBuzz(number) {
   for(i = 0; i <= number; i++) {
     let array = [];
@@ -39,4 +59,4 @@ function fizzBuzz(number) {
     return array;
 }
 
-module.exports = { push, pop, unshift, shift };
+module.exports = { push, pop, unshift, shift, hasDuplicates, betterHasDuplicates };

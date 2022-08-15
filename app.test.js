@@ -1,4 +1,4 @@
-const { push, pop, unshift, shift } = require('./app.js');
+const { push, pop, unshift, shift, hasDuplicates, betterHasDuplicates } = require('./app.js');
 
 test('push', () => {
   const arr = ['a', 'b', 'c'];
@@ -33,4 +33,18 @@ test('shift', () => {
 
   expect(newArr).toEqual('cat');
   expect(newColors).toEqual('blue');
+})
+
+test('hasDuplicates', () => {
+  const arr = ['cat', 'dog', 'bunny', 'cat'];
+  const newArr = hasDuplicates(arr);
+
+  expect(newArr).toEqual(true);
+})
+
+test('betterHasDuplicates', () => {
+  const arr = ['cat', 'dog', 'bunny', 'cat'];
+  const newArr = betterHasDuplicates(arr);
+
+  expect(newArr).toEqual(true);
 })
