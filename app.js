@@ -3,6 +3,12 @@ function push(arr, item) {
   return arr;
 }
 
+function pop(arr) {
+  const popped = arr[arr.length -1];
+  arr.length = arr.length - 1;
+  return popped;
+}
+
 function fizzBuzz(number) {
   for(i = 0; i <= number; i++) {
     let array = [];
@@ -19,4 +25,4 @@ function fizzBuzz(number) {
     return array;
 }
 
-module.exports = { push };
+module.exports = { push, pop };
