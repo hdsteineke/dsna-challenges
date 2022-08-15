@@ -10,6 +10,19 @@ Write a function that takes a positive integer `n`, and returns an array that co
 
 ```js
 function fizzBuzz(number) {
+  for(i = 0; i <= number; i++) {
+    let array = [];
+    let item = array[i];
+    if (i % 3 === 0 && i % 5 === 0) {
+      return 'FizzBuzz'
+      } else if (i % 5 === 0) {
+        return 'Buzz'
+      } else if ( i % 3 === 0 ) {
+        return 'Fizz'
+      }
+    array.push(item);
+}
+
 ```
 
 > **You can assume valid input**
