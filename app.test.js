@@ -1,4 +1,4 @@
-const { push, pop, unshift } = require('./app.js');
+const { push, pop, unshift, shift } = require('./app.js');
 
 test('push', () => {
   const arr = ['a', 'b', 'c'];
@@ -22,4 +22,15 @@ test('unshift', () => {
   const newColors = unshift(colors, 'green');
   expect(newArr).toEqual(3);
   expect(newColors).toEqual(4);
+})
+
+test('shift', () => {
+  const arr = ['cat', 'dog', 'bunny'];
+  const newArr = shift(arr);
+
+  const colors = ['blue', 'red', 'green'];
+  const newColors = shift(colors);
+
+  expect(newArr).toEqual('cat');
+  expect(newColors).toEqual('blue');
 })

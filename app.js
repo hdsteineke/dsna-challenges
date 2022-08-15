@@ -16,6 +16,12 @@ function unshift(arr, item) {
   }
   return arr.length + 1;
 }
+function shift(arr) {
+  for(let i = 1; i < arr.length; i++) {
+    arr[i] = arr[i-1];
+  }
+  return arr[0];
+}
 
 function fizzBuzz(number) {
   for(i = 0; i <= number; i++) {
@@ -33,4 +39,4 @@ function fizzBuzz(number) {
     return array;
 }
 
-module.exports = { push, pop, unshift };
+module.exports = { push, pop, unshift, shift };
