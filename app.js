@@ -56,6 +56,26 @@ function multiplesOfN(n) {
   return array;
 }
 
+function reverseWords(sentence) {
+//need to split sentence into array of words
+  const newSentence = sentence
+  //then need to split each word into individual words
+    .split(" ")
+  //reverse the order of the words
+    .reverse()
+  //rejoin the characters
+    .join(" ")
+  //rejoin the words
+
+  return newSentence
+    //splits words into characters
+    .split("")
+    //reverses order of characters to prepare original placement for scrambled words
+    .reverse()
+    //joins the characters back into words
+    .join("")
+}
+
 function fizzBuzz(number) {
   for(i = 0; i <= number; i++) {
     let array = [];
@@ -72,4 +92,4 @@ function fizzBuzz(number) {
     return array;
 }
 
-module.exports = { push, pop, unshift, shift, hasDuplicates, betterHasDuplicates, multiplesOfN };
+module.exports = { push, pop, unshift, shift, hasDuplicates, betterHasDuplicates, multiplesOfN, reverseWords };

@@ -1,4 +1,4 @@
-const { push, pop, unshift, shift, hasDuplicates, betterHasDuplicates, multiplesOfN } = require('./app.js');
+const { push, pop, unshift, shift, hasDuplicates, betterHasDuplicates, multiplesOfN, reverseWords } = require('./app.js');
 
 test('push', () => {
   const arr = ['a', 'b', 'c'];
@@ -57,4 +57,10 @@ test('multiplesOfN', () => {
   expect(newArr).toEqual([10, 20, 30, 40, 50]);
   expect(nextArr).toEqual([25, 50]);
   expect(zeroArr).toEqual([]);
+})
+
+test('reverseWords', () => {
+  const sentence = reverseWords("alchemy rocks gold");
+
+  expect(sentence).toEqual("ymehcla skcor dlog");
 })
