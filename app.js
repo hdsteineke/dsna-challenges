@@ -43,6 +43,19 @@ function betterHasDuplicates(arr) {
     return false;
   }
 
+function multiplesOfN(n) {
+  //need to set an empty array to push numbers into
+  const array = [];
+  //need to count from 1 to 50
+  for(let num = 1; num <= 50; num++) {
+    //determine if num is multiple of n
+    if (num % n === 0) {
+      array.push(num);
+    }
+  }
+  return array;
+}
+
 function fizzBuzz(number) {
   for(i = 0; i <= number; i++) {
     let array = [];
@@ -59,4 +72,4 @@ function fizzBuzz(number) {
     return array;
 }
 
-module.exports = { push, pop, unshift, shift, hasDuplicates, betterHasDuplicates };
+module.exports = { push, pop, unshift, shift, hasDuplicates, betterHasDuplicates, multiplesOfN };

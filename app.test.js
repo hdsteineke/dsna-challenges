@@ -1,4 +1,4 @@
-const { push, pop, unshift, shift, hasDuplicates, betterHasDuplicates } = require('./app.js');
+const { push, pop, unshift, shift, hasDuplicates, betterHasDuplicates, multiplesOfN } = require('./app.js');
 
 test('push', () => {
   const arr = ['a', 'b', 'c'];
@@ -47,4 +47,14 @@ test('betterHasDuplicates', () => {
   const newArr = betterHasDuplicates(arr);
 
   expect(newArr).toEqual(true);
+})
+
+test('multiplesOfN', () => {
+  const newArr = multiplesOfN(10);
+  const nextArr = multiplesOfN(25)
+  const zeroArr = multiplesOfN(0)
+
+  expect(newArr).toEqual([10, 20, 30, 40, 50]);
+  expect(nextArr).toEqual([25, 50]);
+  expect(zeroArr).toEqual([]);
 })
