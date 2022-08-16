@@ -10,6 +10,9 @@ function addFirst(element) {
   // return addItem();
 }
 
+//arrow notation version of addFirst function (above)
+const betterAddFirst = (element) => (arr) => [element, ...arr];
 
 
-module.exports = { addFirst };
+
+module.exports = { addFirst, betterAddFirst };
