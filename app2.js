@@ -13,6 +13,12 @@ function addFirst(element) {
 //arrow notation version of addFirst function (above)
 const betterAddFirst = (element) => (arr) => [element, ...arr];
 
+function addPunctuation(punctuation) {
+  return function addEmotion(string) {
+    return `${string}` + `${punctuation}`
+  }
+
+}
 
 
-module.exports = { addFirst, betterAddFirst };
+module.exports = { addFirst, betterAddFirst, addPunctuation };
