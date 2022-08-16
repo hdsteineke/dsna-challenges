@@ -25,8 +25,5 @@ console.log(addUnsure('Pokemon, catch em all'));
 
 ```js
 function addPunctuation(punctuation) {
-
-//takes a string of punctuation and adds it to a given string
-return `Hello World` + `${punctuation}`
 }
 ```

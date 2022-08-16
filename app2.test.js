@@ -1,4 +1,4 @@
-const { addFirst, betterAddFirst, addPunctuation } = require('./app2.js');
+const { addFirst, betterAddFirst, addPunctuation, betterAddPunctuation } = require('./app2.js');
 
 test('add-first-element', () => {
   const addOrange = addFirst('orange');
@@ -13,4 +13,9 @@ test('better-add-first-element', () => {
 test('add-punctuation', () => {
   const addConfusion = addPunctuation('..?');
   expect(addConfusion('huh')).toEqual('huh..?');
+})
+
+test('better-add-punctuation', () => {
+  const addAnger = addPunctuation('@$#%');
+  expect(addAnger('what the ')).toEqual('what the @$#%');
 })
