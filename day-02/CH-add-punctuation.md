@@ -22,3 +22,11 @@ console.log(addUnsure('Hello World'));
 console.log(addUnsure('Pokemon, catch em all'));
 // Pokemon, catch em all?!?
 ```
+
+```js
+function addPunctuation(punctuation) {
+
+//takes a string of punctuation and adds it to a given string
+return `Hello World` + `${punctuation}`
+}
+```
