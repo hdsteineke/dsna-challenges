@@ -3,7 +3,6 @@ const { push, pop, unshift, shift, hasDuplicates, betterHasDuplicates, multiples
 test('push', () => {
   const arr = ['a', 'b', 'c'];
   const newArr = push(arr, 'z');
-  console.log('arr', arr);
   expect(arr).toEqual(['a', 'b', 'c', 'z']);
   expect(arr.length).toEqual(4);
 });
