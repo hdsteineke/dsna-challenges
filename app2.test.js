@@ -1,4 +1,4 @@
-const { addFirst, betterAddFirst, addPunctuation, betterAddPunctuation, rootSumDigit } = require('./app2.js');
+const { addFirst, betterAddFirst, addPunctuation, betterAddPunctuation, rootSumDigit, every  } = require('./app2.js');
 
 test('add-first-element', () => {
   const addOrange = addFirst('orange');
@@ -22,4 +22,8 @@ test('better-add-punctuation', () => {
 
 test('digits-root-sum', () => {
  expect(rootSumDigit(12)).toEqual(3);
+})
+
+test('every', () => {
+  expect(every([2, 4, 6], n => n % 2 === 0)).toEqual(true);
 })

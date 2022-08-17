@@ -33,4 +33,16 @@ function rootSumDigit(n) {
   return sum >= 10 ? rootSumDigit(sum) : sum;
   } 
 
-module.exports = { addFirst, betterAddFirst, addPunctuation, betterAddPunctuation, rootSumDigit };
+function every(arr, predicate) {
+  for (let i = 0; i < arr.length; i++)  {
+    if (!arr.predicate(i)) {
+      return false;
+    }
+  }
+  return true;
+}
+
+
+
+
+module.exports = { addFirst, betterAddFirst, addPunctuation, betterAddPunctuation, rootSumDigit, every };
