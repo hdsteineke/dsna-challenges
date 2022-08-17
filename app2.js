@@ -33,14 +33,14 @@ function rootSumDigit(n) {
   return sum >= 10 ? rootSumDigit(sum) : sum;
   } 
 
-function every(arr, predicate) {
-  for (let i = 0; i < arr.length; i++)  {
-    if (!arr.predicate(i)) {
-      return false;
-    }
-  }
-  return true;
-}
+// function every(arr, predicate) {
+//   for (let i = 0; i < arr.length; i++)  {
+//     if (!arr.predicate(i)) {
+//       return false;
+//     }
+//   }
+//   return true;
+// }
 
 
 
