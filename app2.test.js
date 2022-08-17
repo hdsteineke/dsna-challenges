@@ -1,4 +1,4 @@
-const { addFirst, betterAddFirst, addPunctuation, betterAddPunctuation } = require('./app2.js');
+const { addFirst, betterAddFirst, addPunctuation, betterAddPunctuation, rootSumDigit } = require('./app2.js');
 
 test('add-first-element', () => {
   const addOrange = addFirst('orange');
@@ -16,6 +16,10 @@ test('add-punctuation', () => {
 })
 
 test('better-add-punctuation', () => {
-  const addAnger = addPunctuation('@$#%');
+  const addAnger = betterAddPunctuation('@$#%');
   expect(addAnger('what the ')).toEqual('what the @$#%');
+})
+
+test('digits-root-sum', () => {
+ expect(rootSumDigit(12)).toEqual(3);
 })

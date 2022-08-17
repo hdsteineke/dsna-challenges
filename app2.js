@@ -22,4 +22,15 @@ function addPunctuation(punctuation) {
 const betterAddPunctuation = (punctuation) => (string) => `${string}` + `${punctuation}`;
 
 
-module.exports = { addFirst, betterAddFirst, addPunctuation, betterAddPunctuation };
+function rootSumDigit(n) {
+  if (n <= 9) return n;
+  //takes in a number(n)
+  //if n is more than 1 digit,
+  //convert to string and split into array of digits
+  const digits = n.toString().split('');
+  const numbers = digits.map(d => +d);
+  const sum = numbers.reduce((a, b) => a + b);
+  return sum >= 10 ? rootSumDigit(sum) : sum;
+  } 
+
+module.exports = { addFirst, betterAddFirst, addPunctuation, betterAddPunctuation, rootSumDigit };
