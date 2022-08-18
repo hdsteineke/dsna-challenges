@@ -1,3 +1,5 @@
+const { array } = require("yargs");
+
 function addFirst(element) {
   //takes an element 
 
@@ -43,6 +45,18 @@ function every(arr, predicate) {
 }
 
 
+function fib(n) {
+  //takes an integer n as an argument
+  //that integer corresponds to an index in the fibonacci sequence array
+    if (n === 0) return 0;
+    if (n === 1) return 1;
+    //the function returns the fibonacci value at integer 'n'
+    //which is the sum of the previous two indices in the array
+    return fib(n-1) + fib(n-2);
+  };
 
 
-module.exports = { addFirst, betterAddFirst, addPunctuation, betterAddPunctuation, rootSumDigit, every };
+
+
+
+module.exports = { addFirst, betterAddFirst, addPunctuation, betterAddPunctuation, rootSumDigit, every, fib };

@@ -1,4 +1,4 @@
-const { addFirst, betterAddFirst, addPunctuation, betterAddPunctuation, rootSumDigit, every  } = require('./app2.js');
+const { addFirst, betterAddFirst, addPunctuation, betterAddPunctuation, rootSumDigit, every, fib  } = require('./app2.js');
 
 test('add-first-element', () => {
   const addOrange = addFirst('orange');
@@ -26,4 +26,8 @@ test('digits-root-sum', () => {
 
 test('every', () => {
   expect(every([2, 4, 6], n => n % 2 === 0)).toEqual(true);
+})
+
+test('fibonacci', () => {
+  expect(fib(4)).toEqual(3);
 })
