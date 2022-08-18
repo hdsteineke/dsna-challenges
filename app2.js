@@ -67,5 +67,17 @@ function filter(arr, predicate) {
   return newArr;
 }
 
+function largestEven(arr) {
+  let evens = [];
+  // let odds = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] % 2 === 0) {
+      evens.push(arr[i]);
+    } 
+  }
+    evens.sort((a, b) => a - b);
+  return (evens[evens.length - 1]) || -1;
+}
 
-module.exports = { addFirst, betterAddFirst, addPunctuation, betterAddPunctuation, rootSumDigit, every, fib, filter };
+
+module.exports = { addFirst, betterAddFirst, addPunctuation, betterAddPunctuation, rootSumDigit, every, fib, filter, largestEven };

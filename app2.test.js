@@ -1,4 +1,5 @@
-const { addFirst, betterAddFirst, addPunctuation, betterAddPunctuation, rootSumDigit, every, fib, filter  } = require('./app2.js');
+const { exportAllDeclaration } = require('@babel/types');
+const { addFirst, betterAddFirst, addPunctuation, betterAddPunctuation, rootSumDigit, every, fib, filter, largestEven  } = require('./app2.js');
 
 test('add-first-element', () => {
   const addOrange = addFirst('orange');
@@ -34,4 +35,8 @@ test('fibonacci', () => {
 
 test('filter', () => {
   expect(filter([1, 2, 3, 4], n => n % 2 === 0)).toEqual([2, 4]);
+})
+
+test('largest-even', () => {
+  expect(largestEven([2, 3, 4, 12])).toEqual(12);
 })
