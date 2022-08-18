@@ -1,4 +1,4 @@
-const { addFirst, betterAddFirst, addPunctuation, betterAddPunctuation, rootSumDigit, every, fib  } = require('./app2.js');
+const { addFirst, betterAddFirst, addPunctuation, betterAddPunctuation, rootSumDigit, every, fib, filter  } = require('./app2.js');
 
 test('add-first-element', () => {
   const addOrange = addFirst('orange');
@@ -30,4 +30,8 @@ test('every', () => {
 
 test('fibonacci', () => {
   expect(fib(4)).toEqual(3);
+})
+
+test('filter', () => {
+  expect(filter([1, 2, 3, 4], n => n % 2 === 0)).toEqual([2, 4]);
 })

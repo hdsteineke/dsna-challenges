@@ -56,7 +56,16 @@ function fib(n) {
   };
 
 
+function filter(arr, predicate) {
+  const newArr = [];
+
+  for (let i = 0; i < arr.length; i++) {
+    if (predicate(arr[i])) {
+      newArr.push(arr[i]);
+    }
+  }
+  return newArr;
+}
 
 
-
-module.exports = { addFirst, betterAddFirst, addPunctuation, betterAddPunctuation, rootSumDigit, every, fib };
+module.exports = { addFirst, betterAddFirst, addPunctuation, betterAddPunctuation, rootSumDigit, every, fib, filter };
