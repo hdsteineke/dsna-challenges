@@ -20,6 +20,14 @@ Write a function `filter` that takes an array and a predicate callback function:
 
 ```js
 function filter(arr, predicate) {
+  const newArray = [];
+  //need to read through the entire array, checking if each index value meets the condition of the predicate function
+  arr.map(item => {
+    
+  })
+  //if the index value meets the predicate condition (truthy value), add it to the new array
+  //return new array
+}
 ```
 
 > **You can assume valid inputs**

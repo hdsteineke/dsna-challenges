@@ -22,3 +22,8 @@ console.log(addUnsure('Hello World'));
 console.log(addUnsure('Pokemon, catch em all'));
 // Pokemon, catch em all?!?
 ```
+
+```js
+function addPunctuation(punctuation) {
+}
+```
