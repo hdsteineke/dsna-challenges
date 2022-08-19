@@ -6,3 +6,8 @@ test('add', () => {
   B.add(A);
   expect(B.left).toEqual(A);
 })
+
+
+test('find person', () => {
+  const 
+})
